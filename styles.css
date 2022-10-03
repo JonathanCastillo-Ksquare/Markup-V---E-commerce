@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: auto;
+    width: 1115px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 112px;
+    padding: 0 24px;
+    border-bottom: 2px solid #f1f1f5;
+}
+
+.header>.headLeft {
+    width: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTitle {
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+.navbar {
+    width: 400px;
+}
+
+.items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    color: #6d7174;
+}
+
+.carIcon-photo {
+    display: flex;
+    align-items: center;
+    width: 125px;
+    justify-content: space-between;
+}
+
+#photo {
+    width: 48px;
+    border-radius: 50%;
+}
+
+/* Main container */
+main {
+    display: flex;
+    padding: 90px 50px;
+}
+
+.images {
+    width: 50%;
+}
+
+.mainImg {
+    background-image: url('https://moodle.ksquare.university/pluginfile.php/9852/mod_assign/intro/Product_MarkupV.jpg');
+    background-size: cover;
+    background-position-y: -100px;
+    border-radius: 16px;
+    height: 445px;
+    width: 445px;
+    margin-bottom: 32px;
+}
+
+.miniImgsContainer {
+    width: 445px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.miniImgsFa {
+    background-image: url('https://moodle.ksquare.university/pluginfile.php/9852/mod_assign/intro/Product_MarkupV.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 16px;
+    position: relative;
+    background-position-y: -20px;
+}
+
+#opa {
+    border: 3px solid #d5945c;
+}
+
+#opa::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    opacity: 70%;
+    border-radius: 16px;
+}
+
+
+.info {
+    width: 50%;
+    padding: 40px;
+}
+
+.orangeTitle {
+    color: #fa8a30;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.infoTitle {
+    font-size: 2.8em;
+    margin-bottom: 35px;
+}
+
+.description {
+    font-size: 1em;
+    line-height: 24px;
+    margin-bottom: 37px;
+    color: #6a6b6f;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.actualPrice {
+    font-size: 1.8em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.discount {
+    font-size: 0.5em;
+    background-color: #feeedf;
+    color: #fa8120;
+    padding: 4px;
+    border: 4px;
+    border-radius: 5px;
+    margin-left: 18px;
+}
+
+.lastPrice {
+    font-weight: 700;
+    color: #bbbfc2;
+    text-decoration: line-through;
+}
+
+.quantity {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f8fd;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    width: 30%;
+    border-radius: 8px;
+    padding: 0 5px;
+    margin-right: 15px;
+
+}
+
+.min,
+.plus {
+    width: 20px;
+    font-weight: bold;
+}
+
+.buyButton {
+    display: flex;
+    background-color: #ff7d1b;
+    width: 70%;
+    height: 57px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+#buyCar {
+    margin-right: 18px;
+}
+
+.buy {
+    display: flex;
+}
